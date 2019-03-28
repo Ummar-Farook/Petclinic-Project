@@ -2,8 +2,9 @@ version: '3.3'
  services:
    petclinic:
      image: PetclinicMaven
+     ports:
+      - "8080:8080"
      environment:
-       MYSQL_ROOT_PASSWORD: somewordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
+       DATABASE_NAME: xxxx
+       DB_USER: xxxx
+       DB_PASSWORD: xxxx
