@@ -12,5 +12,13 @@ version: '3.3'
        com.example.description: "webapp"
        com.example.department: "petclinic"
        com.example.label-with-empty-value: ""
+     deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M  
   networks:
     overlay:
