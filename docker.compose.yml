@@ -20,5 +20,7 @@ version: '3.3'
         reservations:
           cpus: '0.25'
           memory: 20M  
-  networks:
-    overlay:
+ networks:
+   default:
+     external:
+       name: my-pre-existing-network
